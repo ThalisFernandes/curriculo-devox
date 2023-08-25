@@ -1,0 +1,74 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+body,html {
+    height: 100%;
+}
+
+#elementoPrincipal {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#curriculo {
+    width: 60%;
+    height: 80%;
+    background-color: #1A1B1D;
+}
+#navbar {
+ width: 8%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+}
+#menuItem{
+    width: 100%;
+    background-color: #55B983;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+#navegacao{
+    width: 100%;
+    background-color: #1A1B1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+.navIcon{
+    width: 100%;
+    background-color: #1A1B1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.navIcon:hover {
+   background-color: #2e2e30;
+}
+
+.navImg{
+    width: 25px;
+}
+
+#baixar{
+    width: 100%;
+    background-color: #1A1B1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+#menuIcone{
+    width: 25px;
+    height:25px;
+}
