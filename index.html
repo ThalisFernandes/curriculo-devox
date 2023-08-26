@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Thalis</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="elementoPrincipal">
-        <div id="curriculo">
-            <div id="navbar">
-                <div id="menuItem">
-                    <img id="menuIcone" src="./images/icons8-menu.svg" > 
-                </div>
-                <div id="navegacao">
-                    <!-- o nome da tag | . se for class | # se for id | * qnt -->
-                    
-                    <div class="navIcon">
-                        <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACZElEQVR4nO2ZPWtUQRSGHxNdiaZQxEpIndhpq6CNJloIJkgKg4VoERQtoiR+INFGC8mfkGisxcq/EPwKiPErWgQLCwUXRaO54cB7YVgkubOz7owyDwwsd89575mvO2dmIJP5Z6gBw8A94CVQV7Hfd/Wf2STNMeAdUKxR3gJDJEgnMOUE+hg4C/QBm1X69OyJY3dbvskwpcC+AyeBdavYdgCnZFtWJpnhVADfgD0efnudygwSmZozJ6wnfDkt3zexPwDDzpywIeOL+TyVhvVsNGYUxJkAjXPSmCYi8wqiN0BjpzRsnYnGVwXRHaDRLQ3Tika5HqSi0zS5Ig3kHmkVeWilNrS+KIAtARpbpfGZiDxXELsCNHZLw9L7aEwriAsBGhelcYeIHFIQ8wFJ4ytpDBCRTqXgFsh4E/4T8n2dwk5xP7AM/PBsVbP9CfwG9pEIN9SyS8BoBftR2ZrPdRJj3GM9KO1ukSiFZ0WSpcgVSYzif+iR7c4h3VqU51nbSIwBYEHBPahg/9BZCPuJTA0YAWadoWJnVDsq+PYALxy/WWnVaCM2HC4Bi04gH4ExYKOHzibgKvDJ0VmU9l8dctZa5509SJks2rOuAF2r/AlgztG1o6HJQN0/crDh3uORnq126u6LafVLu3zPB+Bwq15wRYldoVZrx+Q8ADzTO5fVO0FMSuwXcK3NqXYHcNlJLm82K3RErbGkU/dYDCrdt1iONjOxFwI2TK1mTLG89/1EH5ejTfANxGe9LlALrTeVuS8n2zCltnmb8XEqax89fWhIg8prusrUK9yVxyp1n4oUiZdMJoMfK+YhJaCnoLnkAAAAAElFTkSuQmCC">
-                    </div>
-                    <div class="navIcon">
-                        <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADS0lEQVR4nO2ZS0hUURjHf6ZZGJWUVqYWGbQSMlpkRYtE2oRBRAVFmGIYZLWM1tKqwih6CLWpXUXagx4LSVr0EiwhIm3Rg4qg1J5oz4lD/wuHYebOXBnvnIH5wd3M/c7c79x7vv/5vu9AlixpZR3QA4wCfcByMox84DgQibqGgVIyhOlAlxwfAVqAIuCyfrtOBjAHeCyH3wJLo+591L1GHGYa0CtHnwLzY9hs1f1PwDwcZBJwR04+AWb62Ha4vMQOyLlXQFkCW7PEBmVfj2MMybHVSdpvk70ZV4JDjMqxwgBjrmmMWWrO8FxOVQYYU6agN+M24wgdcsioUhB2aFw/jtAih84GHFekcb+BHBxgIfAX+AJMDTBuuyZi8jFn6JJTO5O0nwy8dFGGN1nrPS8J+/2yfwRMwCFylZoY55oT2M4CPsu2FgfZIOfeAQU+du2yMxmxk+QAD+TkQZ/Y+CqbJhxmCfAT+AOsimOzxyq0FuAwrVbgF8T5cldl8zDBMkx7qdsnR03JG4tCSxw6JRZOUqVS1zja4LORfpBNuyu7eywarNp9WUyL/50VL/jbcJijliTH66DUWF/vMI4yEbgtJ+/6BHad1C6iitNJioEXcvKGxCAWG63JtLkaM4uA93LyvI9K1VnL7JSrarZYm6Bx8rTPG6+xBKAzznLMlZiYpNNsvgNKXENjBfAticCutqS5J6pPVmvtU9HXRWA2IbEG+GFNJt6XqbA2zSGVxl5GEFHcmVqmSPe8jNp0NLeENZn11mTO+MSCyQCuRL114/A+JaA25RITz65DfbRQvoy3zC74qJn5YrsVNydVz/jRaMXioPpo485K66E3EySQpjWbLKVW7yyiJTmXEPIyT5rvpbj7WG91Qod9UqWU7jNeM+JNih9YYomEketQMoBuPXDUJ2seCzP0v98JMTc7Zq3tEykqvPZa+V6oNFjN8QGJwliptqR+LWmgytrBTRpyCJgS8D8qLCE5QhrJVw/gl1XXNCfZBCwGnmncLS3btGMOVu9bsdOv9my8XnO5ld70BuxJjzs5agJ6bzmixvk5HWlU6njcZM+vLbkNLYkMSp4Oh7p0ChCJc3VrYhmBCeZdwCWp24iy39aAKU2WLKSQf3jSBy3qRwNwAAAAAElFTkSuQmCC">
-                    </div>
-                    <div class="navIcon">
-                        <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6klEQVR4nO2aQQ6CQAxF/xIvhTdU8Ui6MN5EuMR3UxIWOiFMaQX/S7qgIXQ+7TSTdAAhfoYngEeC3x2aRfurOAC4AhgmAaaBGOAfAHQAmhohly9BIoXQ7FwjpLePtIml1drza8H6i8HuAG4f3l3Tz9p9s8rGy1gHJcQXKiOGSssZqrRm/Ak6WXpGuBchkVBCDGXEGaq0ArvWnC7GLbTfdCGRUEIMZcQZqrT+6dDIvQiJhBJiKCPOUKWVcGgssYn2my4kEkqIoYw4Q5VWYRgazdFjGFoaT0fbqUZIY2LGzGRYbzP2qgsDQmAZb15H1KBW7TMcAAAAAElFTkSuQmCC">
-                    </div>
-                    <div class="navIcon">
-                        <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7UlEQVR4nO2ZUQqDMBBE58tD1Qt4sdb2mtb0GlOEbQlCrSYpWe08GBBC1oyjKySAEEKspAFwA/AAwI0KAHqrUZ1rgoG5LnBAsMWcEua2UTLVeT3VWvOLISOlE2kyuk5thbjrleg6tXXJ7Tq1aeOu56ZrJPJev4w4gUrEGfzLRDoA9w89fLDxVHJrc4uR4csPaRpPJbc250bWaKlQrnJrH8/IYV6tJbqFG5b42HNqc4sRz1BGnEEl4gwqEWdQiTiDSsQZVCLOoBJxBg+XSLCLaUN4r5vYI+x8gTvXGXZI0kfJ7EmjmXBxvC2EwO95Aq9H7zh0D7CyAAAAAElFTkSuQmCC">
-                    </div>
-                    <div class="navIcon">
-                        <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADa0lEQVR4nO2YW0hUQRzGfxamlRmVlj1mhT1EQgldEAyiotKXblAZkYRRBBERdCECiQwkoav1EET6YkQEBV3Jx5Qsy6Ib+RCZkZWVlpcSNya+lWFdt909u7kL54N52PP/n//3nZnZmW8GXLhw4cKFCxdBYRRQDXQAlUAi0UciUCXOamlwjAuAx2rlRB/lPpxGgyPMAfqAn8BmoEu/84ge8sRhuIosTqMlbFxVjxzW70P6/Zzo4YU4DBfi9khLWMhWT7QDE/QsCXgA1BI91InDcCHudmkxmkJGtXqilKFHqbQYTSFhGtALdALpDD3SpaVX2oLGOfXAKWIHp6XpbLAvTAr366OMKdLUDUyO6nz8D7gkbUf+lTgG+KrkucQecqTtOzA2UOJuJdYQu6iRRqN1UH/zVknLiF2skMZ3wAh/CRuV8BRIIHaRADyT1kJ/CY8U3ETso0han/h2+hIFmgcbrhhDEvBemhfbgdt6uIf4wT5pvuVrDn8DW4GDQAVwDWgAmtS+AG3akDw69HzUlDTOtAzYAuQCGapVD/xQM0awWLFc5Zbp3QbV6lDtLnG1Wvx1yj2uDi+S5n4zWelziInHdhF9vfnRo1Ew/n87UADMBjJlD8apef9DKbIK84F1QIl23kaLYJVsuGmrreeNyi3Ru/NUK0W1k8WVJv5MbdArgZ3AMeAe8Ev1um273ifiSMArONjn4WCpppapdx0tX8V6YOZqvHxIrbVA9V+IJGtEuiOwGSZZU9UXPYpFYonvVK3RvoFvCqQ6JEhTnc9+Ym2KjXfIkao6RvMAvFRwlkOSbNUxlwi+eBUhjpmq8zrQ/dUOhySFqnPZT+yKYusdcmxTHbN1DMBaBR87JKlSnb1+YvsDCQgB9aqzwV8wUdbYo8u4cDBRu7NZOKb6iU+3XEG6wxFvCbRorLGIwrlN9LqEGwFybjoYlQU6HQ5q4W1UWLulWaNHBkFglu+T1ntZAXKzLL92wrqICwSTs8tyIeeDeOfvPnLU2ryaJdJYlhlaXofL/OXIhTZZH5EfBEeB9TFvVMPc7Waodpq48mUSvVPeI3syjBCwELgfgnF7KN8VyjTxHuaCaXXAIsJEgoyjWW3u6PK6VR6nRSvcGZ3xQ+olwbyzXDVMrQ+q/Ulcd4EDGvlYPn67cOHChQviG38A9OpUWlCAEngAAAAASUVORK5CYII=">
-                    </div>
-                </div>
-                <div id="baixar">
-                    <img class="navImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADB0lEQVR4nO2Z3YtMYRzHP3a9jpc21sxQ5C1FFFHakJeibd24EQnXe4H2brkTpVUU+QMWiVLWhfdEsSHvNizLtkoJid3FLlvs6Nm+R481M7szc87OeTSfOs0855zn9/y+53n7nd+BAgUKhIHBwAJgE7Ad2AqsBRYCxTjAIuAI8BVIpDg+ArVAGSFkAnAK6LYcfg6cAA4Bh4E64FkvUXXAdELCcuC9HPsM7AYmpbl/BrALaFedVqCcPLMa+C6HTgLRDOqOV4+Zuj+BLeSJ2cA3ObIzSxuDVNcMyS5gCQER0UqzUkPCYwjwVCL2+NDOXtkyQ7QEH5kGHAc6e03ORmAdUKXydaDIh/aKgKuyWYNPlFsT0YzdR8A14LUlyAyFX8AsvxoF5smmeXgxP4x1yNlaLas2ZRLmLZ1+c0a2K3M1dFOG9vUxbyr9eGpJ2Kz2L5ID82XklSZzPojKh0+5GKnycRXKhU75MSKbykuB+zKQt41JtMiPqWRAzJpgXkBn7xf54K18OQCsAYb2VWGmtaS2aKJl1Z0+86TX3vUBqE41b8cBzbrxNDCK8DAGWAxs1KbcJT/vJovljuni5TyuUP3FRBm3rcjCCP0T7HVr956IGwxXOJRQL/WwXycO4hZx4Is6wUQgPJCQZbhHjd0JrSqMDagxMwTuBZgTSGhl44cKwwJqzFs2g6BEtttM4Y0K6d6rwypkpGybN1OuqLDeQSFzZPulKWxT4ayDQqqtdyVKrTdAk8pxRUjEisMqvJM7dOIdMMURIUdl95ayLz2Y/OsFS8yKEAuJWCLaFZn8xWjgvNXwOWADMLk/oXPAQiLAXM0JbziZXX1VqgrFurktTdI51VGfhZD6LNpJaDj90xPJKFXq/5L2GS90TnfcCFBIB9Ck1anCnhMDSZDL74BSEBI2nOyRh8BjvfSkEmKuNQB3CDEN1me2eBIhcV1LKGccWqLWd5Im5QA8ITHr2gsX8gNx66l7v/Z/u7dCT9R6+vbhRE/0JcZJER5xJdEaXRpO6Xomk8/UBfgf+A3SSyxFIXLo1QAAAABJRU5ErkJggg==">
-                </div>
+      <div id="curriculo">
+        <div id="navbar">  
+          <div id="menuItem">
+            <img id="menuIcone" src="./images/menu.svg" />
+          </div>
+          <div id="navegacao">
+            <!-- o nome da tag | . se for class | # se for id | * qnt -->
+
+            <div class="navIcon">
+              <img
+                class="navImg"
+                src="./images/user-avatar-face-svgrepo-com.svg"
+              />
+            </div>
+            <div class="navIcon">
+              <img class="navImg" src="./images/phone-svgrepo-com.svg" />
+            </div>
+            <div class="navIcon">
+              <img class="navImg" src="./images/edit-3-svgrepo-com.svg" />
+            </div>
+            <div class="navIcon">
+              <img class="navImg" src="./images/suitcase-svgrepo-com.svg" />
+            </div>
+            <div class="navIcon">
+              <img class="navImg" src="./images/glasses-svgrepo-com.svg" />
+            </div>
+          </div>
+          <div id="baixar">
+            <img class="navImg" src="./images/download-cloud-svgrepo-com.svg" />
+          </div>
+      </div>
+      <div id="imgprofile">
+        <div id="efeito">
+            <div id="nome">Jose Niko</div>
+            <div id="profisao">Programador</div>
+            <div id="icones-img">
+                <img src="./images/facebook.svg" class="imgprofileicons" />
+                <img src="./images/github.svg" class="imgprofileicons" />
+                <img src="./images/inkedin.svg" class="imgprofileicons" />
+                <img src="./images/google.svg" class="imgprofileicons" />
             </div>
         </div>
+      </div>
+      <div id="about"></div>
+
     </div>
-</body>
+  </body>
 </html>
